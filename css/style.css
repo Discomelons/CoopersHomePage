@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 :root {
   /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
   --primary: #FC6E18;
@@ -20,6 +23,10 @@ button {
     color: white;
 }
 
+.cs-service {
+  margin-top: -15px;
+  font-size: 40px;
+}
 
 /* Navigation */
 
@@ -88,6 +95,7 @@ button {
       gap: 1rem;
     }
     #cs-navigation .cs-top-contact {
+      font-family: "Ubuntu", sans-serif;
       width: auto;
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
@@ -98,6 +106,7 @@ button {
       gap: clamp(1rem, 2vw, 1.5rem);
     }
     #cs-navigation .cs-top-link {
+      font-family: "Ubuntu", sans-serif;
       font-size: 0.875rem;
       line-height: 1.5em;
       text-decoration: none;
@@ -646,7 +655,8 @@ button {
     }
     #cs-navigation .cs-logo img {
       width: auto;
-      height: 100%;
+      height: 140%;
+      width: 150%;
       /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
       object-fit: contain;
     }
@@ -802,16 +812,18 @@ button {
     #hero-1426 .cs-title {
       /* 39px - 61px */
       font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      font-family: "Ubuntu", sans-serif;
       font-weight: 700;
       line-height: 1.2em;
       text-align: center;
-      max-width: 51.8125rem;
+
       color: #fff;
       position: relative;
     }
     #hero-1426 .cs-text {
       /* 16px - 20px */
       font-size: clamp(1rem, 1.95vw, 1.25rem);
+      font-family: "Ubuntu", sans-serif;
       line-height: 1.5em;
       text-align: center;
       width: 100%;
@@ -932,12 +944,13 @@ button {
     }
     #why-choose-375 .cs-title {
         font-size: var(--headerFontSize);
+        font-family: "Ubuntu", sans-serif;
         font-weight: 900;
         line-height: 1.2em;
-        text-align: inherit;
-        max-width: 43.75rem;
+        text-align: center;
         margin: 0 0 1rem 0;
         color: var(--headerColor);
+        padding: 2rem;
         position: relative;
     }
     #why-choose-375 .cs-card-group {
@@ -979,6 +992,7 @@ button {
     #why-choose-375 .cs-item:hover .cs-h3,
     #why-choose-375 .cs-item:hover .cs-item-text {
         color: #fff;
+        font-family: "Merriweather", serif;
     }
     #why-choose-375 .cs-bullet {
         width: 1.1875rem;
@@ -996,6 +1010,7 @@ button {
     }
     #why-choose-375 .cs-item-text {
         /* 14px - 16px */
+        font-family: "Merriweather", serif;
         font-size: clamp(0.875rem, 2.2vw, 1rem);
         text-align: inherit;
         line-height: 1.5em;
@@ -1096,12 +1111,12 @@ button {
         width: 24.125em;
         height: auto;
         position: absolute;
-        right: 2.875em;
-        bottom: 4.0625em;
+        bottom: -5rem;
+
     }
     #why-choose-375 .cs-person img {
-        width: 100%;
-        height: auto;
+        width: 150%;
+        height: 150%;
     }
     #why-choose-375 .cs-mask {
         width: 23.9375em;
@@ -1252,6 +1267,7 @@ button {
   }
   #services-342 .cs-item-text {
       /* 14px - 16px  */
+      
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
       color: var(--bodyTextColor);
@@ -1302,7 +1318,8 @@ button {
     align-items: center;
   }
   #reviews-1452 .cs-title {
-    max-width: 20ch;
+    font-family: "Ubuntu", sans-serif;
+    max-width: 30ch;
   }
   #reviews-1452 .cs-quote {
     /* 48px - 72px */
@@ -1376,6 +1393,7 @@ button {
   #reviews-1452 .cs-name {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.3vw, 1.5625rem);
+    font-family: "Ubuntu", sans-serif;
     line-height: 1.2em;
     font-weight: 700;
     margin: 0;
@@ -1481,12 +1499,13 @@ button {
   }
   #footer-1390 .cs-logo {
       width: 100%;
-      max-width: 13.0625rem;
+      max-width: 15.0625rem;
       height: auto;
       display: block;
   }
   #footer-1390 .cs-logo-img {
-      width: 100%;
+      width: 250%;
+      height: 250%;
       height: auto;
       display: block;
   }
