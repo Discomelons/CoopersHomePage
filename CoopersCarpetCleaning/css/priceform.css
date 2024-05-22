@@ -1,0 +1,31 @@
+#price-holder {
+    color: black;
+    margin: 10px;
+}
+
+#price-calculator{
+    padding: 5px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    background-color: #252323 ;
+}
+
+#price-calculator:hover {
+    filter: contrast(30);
+    transform: scale(1.2);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#FC6E18, #FFE066);
+    
+}
+
+.header-t {
+    font-size: 2rem;
+}

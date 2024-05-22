@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/priceform.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-top-bar">
+        <div class="cs-top-container">
+            <div class="cs-top-contact">
+                <a href="" class="cs-top-link">
+                    <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                    Call us: 0428 933 871
+                </a>
+                <a href="" class="cs-top-link">
+                    <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg" alt="logo" width="20" height="20" aria-hidden="true" decoding="async">
+                    Opening hours: Mon - Sat: 8:00am To 9:00pm
+                </a>
+            </div>
+            <div class="cs-top-social">
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+                <a href="" class="cs-social-link">
+                    <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="images/car.png" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Carpet Cleaning</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Animal Hair Removal</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Carpet Stain Removal</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Steam Extraction</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Stain Removal</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="" class="cs-li-link cs-drop-link">Flood Damage</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button> -->
+    </div>
+</header>
+
+
+
+
+    <!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1426">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper"> Your local carpet cleaners</span>
+            <h1 class="cs-title">We Are The Coopers</h1>
+            <p class="cs-text">
+                With experience over 20 years, We aim to satisfy our customers needs with a range of services available!
+            </p>
+            <div class="cs-button-group">
+                <a href="" class="cs-button-solid cs-button1">Schedule A Cleaning</a>
+                <a href="" class="cs-button-solid cs-button2">View Our Services</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="Images/home.png">
+        <source media="(min-width: 601px)" srcset="Images/home.png">
+        <img loading="lazy" decoding="async" src="Images/home.png" alt="field" width="1920" height="1200" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose Us                -->
+<!-- ============================================ -->
+
+<section id="why-choose-375">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Why Choose Us</span>
+            <h2 class="cs-title">Expert Carpet Cleaning Service You Can Trust</h2>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <img class="cs-bullet" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/splash-bullet.svg" aria-hidden="true" loading="lazy" decoding="async" alt="splash icon" width="19" height="20">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">We have the experience and the Reviews!</h3>
+                        <p class="cs-item-text">
+                            With over 20 years in the carpet cleaning business, we have the experience to remove stubborn stains, dust mites and mould on carpets, making them look and feel fantastic in your home or workplace for years to come.
+                            All of our work can be backed up by satisfied customers.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-bullet" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/splash-bullet.svg" aria-hidden="true" loading="lazy" decoding="async" alt="splash icon" width="19" height="20">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">A range of different services</h3>
+                        <p class="cs-item-text">
+                            Our advanced stain removal services include steam extraction, stain treatment, and flood damage restoration and more. We guarantee that your carpet will look as good as it was when you first bought it!                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <img class="cs-bullet" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/splash-bullet.svg" aria-hidden="true" loading="lazy" decoding="async" alt="splash icon" width="19" height="20">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">In Australia for Australians</h3>
+                        <p class="cs-item-text">
+                            As a locally owned and operated business, we know what our customers want and go out of our way to provide exceptional service on every single job. Specialising in insurance work and rental properties, there is nothing we can’t handle in the field of carpet, tile and upholstery cleaning.  
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Left Image Group-->
+        <div class="cs-image-group">
+            <!--Faded Paint Splash-->
+            <img class="cs-splash" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/blue-splash.svg" aria-hidden="true" loading="lazy" decoding="async" alt="splash icon" width="570" height="586">
+
+            <!--Blue Blob-->
+            <img class="cs-blob" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/blob.svg" aria-hidden="true" loading="lazy" decoding="async" alt="blob icon" width="392" height="497">
+
+            <!--Lightning Bolt-->
+            <img class="cs-lightning" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/lightning.svg" aria-hidden="true" loading="lazy" decoding="async" alt="lightning icon" width="392" height="497">
+            
+            <!--Left Circle Image-->
+            <picture class="cs-left-image">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning2-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning2.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning2.jpg" alt="cleaning" width="211" height="211" aria-hidden="true">
+            </picture>
+            <!--Bottom Circle Image-->
+            <picture class="cs-bottom-image">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning4.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning4.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaning4.jpg" alt="cleaning" width="180" height="180" aria-hidden="true">
+            </picture>
+            <!--Main Person Image-->
+            <!--To make your own crops of people, use https://www.remove.bg/ to remove the background of any image-->
+            <picture class="cs-person">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaner3.png">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaner3.png">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/cleaner3.png" alt="cleaning" width="386" height="521" aria-hidden="true">
+            </picture>
+            <!--Masking SVG to cover the bottom of the person image-->
+            <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383 173"><path d="M0 131.021c0-29.542.317-41.863 1.067-41.4.587.363.983.052.881-.69-.502-3.66.132-4.85 2.583-4.85 2.264 0 2.507.363 2.3 3.447-.183 2.714.343 3.902 2.474 5.577 1.488 1.17 3.346 2.77 4.129 3.552.783.783 1.85 1.423 2.372 1.423.522 0 1.51.675 2.194 1.5.685.825 2.262 1.5 3.506 1.5 1.447 0 2.456.747 2.803 2.074.298 1.141 1.476 2.319 2.617 2.617 1.14.298 2.074.868 2.074 1.265 0 1.176 4.868 3.044 7.93 3.044 2.055 0 3.042.62 3.58 2.25l.744 2.25.442-2.25c.314-1.595 1.15-2.25 2.874-2.25 2.095 0 2.43.467 2.43 3.384 0 3.984 1.935 4.861 8.687 3.936 3.861-.53 4.313-.38 4.313 1.437 0 2.581 2.158 3.402 6.935 2.638 3.15-.504 3.859-.292 4.269 1.277.405 1.55 2.677 2.273 12.894 4.103 18.887 3.384 38.907 4.572 54.402 3.23 7.15-.62 15.475-1.296 18.5-1.503 13.731-.938 35.155-5.125 36.708-7.175.867-1.145 2.091-1.417 4.343-.967 2.97.594 20.732-3.208 24.769-5.301.924-.48 3.572-1.376 5.885-1.992 2.313-.616 4.869-1.783 5.679-2.594.81-.81 3.08-1.473 5.045-1.473 2.36 0 3.571-.465 3.571-1.372 0-.828 1.587-1.626 4-2.012 2.588-.414 4-1.165 4-2.128 0-1.034 1.068-1.488 3.5-1.488 1.925 0 3.5-.45 3.5-1s.879-1 1.953-1c2.39 0 7.047-2.038 7.047-3.083 0-.419 1.688-1.27 3.75-1.89 7.21-2.17 13.218-5.473 13.234-7.277.012-1.33.855-1.75 3.516-1.75 1.925 0 3.5-.45 3.5-1s.469-1 1.042-1c.573 0 1.586-.454 2.25-1.01.664-.555 4.583-3.598 8.708-6.76 10.945-8.394 18.178-16.216 25.328-27.393 3.004-4.696 3.488-6.198 2.988-9.277-.506-3.116-.29-3.754 1.422-4.202 2.287-.598 4.262-4.26 4.262-7.905 0-1.349.4-2.453.888-2.453.999 0 5.23-20.999 4.478-22.217-.266-.43.244-.783 1.134-.783.89 0 1.34-.45 1-1-.404-.653 6.156-1 18.941-1H383v173H0Zm18-35.44c0-2 .5-2.5 2.5-2.5s2.5.5 2.5 2.5-.5 2.5-2.5 2.5-2.5-.5-2.5-2.5z" fill="#fff"/></svg>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-342">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Services</h2>
+            <p class="cs-text">
+                For Queries or specialisation, please contact us directly
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" src="images/animal.png">
+                        <source media="(min-width: 601px)" srcset="images/animal.png">
+                        <img loading="lazy" decoding="async" src="images/animal.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Animal Hair Removal</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" src="images/steam.png">
+                        <source media="(min-width: 601px)" src="images/steam.png">
+                        <img loading="lazy" decoding="async" src="images/steam.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Carpet Cleaning</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" src="images/vacumme.png">
+                        <source media="(min-width: 601px)" src="images/vacumme.png">
+                        <img loading="lazy" decoding="async" src="images/vacumme.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Carpet Stain Removal</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" src="images/stain.png">
+                        <source media="(min-width: 601px)" src="images/stain.png">
+                        <img loading="lazy" decoding="async" src="images/stain.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Steam Extraction</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" src="images/treatment.png">
+                        <source media="(min-width: 601px)" src="images/treatment.png">
+                        <img loading="lazy" decoding="async" src="images/treatment.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Carpet Treatments</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)" src="images/flood.png">
+                        <source media="(min-width: 601px)" src="images/flood.png">
+                        <img loading="lazy" decoding="async" src="images/flood.png" alt="cleaner" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Flood Damage</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section>
+    <div class="main">
+        <h1 class="header-t">Estimate the cost to clean multiple rooms</h1>
+        <h1>Enter the number of rooms you want to clean: </h1>
+        <input id="price-holder" type="text" placeholder="Enter a Number">
+        <button id="price-calculator" type="submit">Check!</button>
+        <h1 id="display">Cost will be displayed here</h1>
+    </div>
+</section>
+
+<section id="reviews-1452">
+    <div class="cs-container">
+        <div class="cs-content">
+            <!--Yellow Quote-->
+            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/quote-yellow.svg" decoding="async" alt="quote icon" width="40" height="33" loading="lazy">
+            <span class="cs-topper">Our Reviews</span>
+            <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+            <p class="cs-text">
+               Don't hear it from us, let our customers tell you about their experience
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <p class="cs-review">
+                    I had an amazing experience with Coopers Carpet Cleaning. They transformed my old, stained carpets into looking like new again. The team was professional, friendly, and used environmentally friendly products, which I appreciated. They also handled a flood damage situation efficiently. Being locally owned, their service felt personalized and attentive. They provided a free quote and the entire process was seamless. Highly recommend for anyone in Kalgoorlie needing reliable carpet, tile, or upholstery cleaning.                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="images/man.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        James Kim
+                        <span class="cs-job">Local Resident</span>
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <p class="cs-review">
+                    I recently had Coopers Carpet Cleaning WA Pty Ltd clean the carpets in my rental property in Kalgoorlie. The results were outstanding! The team was punctual, professional, and managed to remove all the tough stains and dust mites. Their eco-friendly cleaning products were a big plus for me. The booking process was smooth, and they even provided a free quote beforehand. As a locally owned business, their personalized service was exceptional. Highly recommend them for any carpet, tile, or upholstery cleaning needs.                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" " src="images/woman.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Samantha Jones
+                        <span class="cs-job">Small Bussiness Owner</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Footer                      -->
+<!-- ============================================ -->
+
+<footer id="footer-1390">
+    <div class="cs-container">
+        <div class="cs-top">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" loading="lazy" decoding="async" src="images/car.png" alt="logo" width="209" height="40">
+            </a>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <a href="" class="cs-link">Home</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">About</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Services</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Blog</a>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-bottom">
+            <!--Social-->
+            <ul class="cs-social">
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+                <li class="cs-social-li">
+                    <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
+                        <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    </a>
+                </li>
+            </ul>
+            <span class="cs-copyright">
+                © Copyright 2023 - <a href="" class="cs-copyright-link">CoopersCarpetCleaning</a>
+            </span>
+            <div class="cs-flex">
+                <a href="" class="cs-copyright-link">Privacy Policy</a>
+                <span class="cs-separater">|</span>
+                <a href="" class="cs-copyright-link">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+              
+
+    
+    <script src="js/script.js"></script>
+    <script src="js/price.js"></script>
+</body>
+</html>
