@@ -7,6 +7,9 @@
 }
 
 #price-calculator{
+    font-family: "Merriweather", serif;
+    font-size: 1.1rem;
+    font-style: bold;
     padding: 5px;
     width: 70px;
     height: 30px;
